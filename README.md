@@ -1,0 +1,2 @@
+# newjavascript
+practisingjavascript

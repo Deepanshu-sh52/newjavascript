@@ -87,7 +87,7 @@ const number= (company)=>{
 
 }
 
-{
-    "1":"deepanshu",
-    "class":"general".
-}
+// {
+//     "1":"deepanshu",
+//     "class":"general".
+// }

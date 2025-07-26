@@ -1,5 +1,8 @@
-function chai()
+(function chai()
 {
     console.log("ram ram bahi");
-}
-chai();
+})
+();
+
+((name)=>(console.log(`Namaskar ${name}`)))
+("Raghav")

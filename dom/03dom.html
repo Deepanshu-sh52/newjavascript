@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element add karna sekho</title>
+</head>
+<body>
+    <ul class="language">
+        <li>
+            html
+        </li>
+    </ul>
+</body>
+<script>
+    function addelement(lang)
+    {
+        const li=document.createElement('li')
+        li.innerHTML=lang;
+        document.querySelector('.language').appendChild(li);
+    }
+    addelement('java');
+    addelement("c++");
+    //optamize
+    function addlanguage(lang)
+    {
+        const li=document.createElement('li');
+        li.append(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(li);
+    }
+    addlanguage('CSS');
+
+    //edit
+    const secondel = document.querySelector("li:nth-child(2)");
+    console.log(secondel);
+    secondel.innerHTML='mojo';
+
+    const li=document.createElement('li');
+    li.textContent='js';
+
+    secondel.replaceWith(li);
+
+    //secondel.outerHTML='<li>python</li>'
+    
+    const lastel=document.querySelector('li:last-child')
+    lastel.remove();
+</script>
+</html>

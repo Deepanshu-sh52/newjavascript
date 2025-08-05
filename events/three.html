@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jai bhole</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const printing=function(){
+        console.log("jai mata di", new Date())
+    }
+    let inervalid;
+    function callevent(){
+       intervalid=setInterval(printing,2000);
+    }
+    document.querySelector('#start').addEventListener('click',function(){
+          callevent();
+    })
+     document.querySelector('#stop').addEventListener('click',function(){
+           clearInterval(intervalid);
+    })
+</script>
+</html>
